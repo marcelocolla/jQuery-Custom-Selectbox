@@ -1,56 +1,14 @@
-.sb-custom {
-  cursor: pointer;
-  display: inline;
-  position: relative;
-  width:  100%;
-}
-.sparkbox-custom {
-  display: none;
-}
-.no-js .sparkbox-custom {
-  display: block;
-}
+/* custom select */
 
-.sb-select:focus {
-  -webkit-box-shadow: 0 0 4px 2px #79aed7;
-     -moz-box-shadow: 0 0 4px 2px #79aed7;
-          box-shadow: 0 0 4px 2px #79aed7;
-}
-.sb-select {
-  background: #d3d1be url('../i/select-arrow.jpg') no-repeat 100% 50%;
-  border: none;
-  color: #444;
-  left: 0;
-  padding: 5px 30px 5px 5px;
-  position: relative;
-  text-decoration: none;
-  top: 0;
-  width: 200px;
-  z-index: 1;
-}
-.sb-dropdown {
-  background: white;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
-     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
-          box-shadow: 0 0 4px rgba(0, 0, 0, .2), inset 0px 6px 8px -8px rgba(0, 0, 0, .5);
-  display: none;
-  font-size: .9em;
-  left: 5px;
-  list-style: none;
-  margin: 0;
-  padding: 5px;
-  position: absolute;
-  top: 1.35em;
-  width: 200px;
-  z-index: 2;
-}
-.sb-dropdown a {
-  color: #444;
-  display: block;
-  padding: 3px;
-  text-decoration: none;
-}
-.sb-dropdown a:hover,
-.sb-dropdown .selected {
-  background: #d3d1be;
-}
+#container-select { width:250px; height:40px; }
+
+.sb-custom { display:inline; position:relative; background:url(../imagens/bg-select-flexinha.png) no-repeat center right;  }
+.sparkbox-custom { display:none; width:100%; }
+.no-js .sparkbox-custom { display: block; }
+.sb-select:focus { -webkit-box-shadow: 0 0 4px 2px #79aed7; -moz-box-shadow: 0 0 4px 2px #79aed7; box-shadow: 0 0 4px 2px #79aed7; }
+.sb-select { width:100%; height:23px; line-height:23px; position:relative; z-index: 1; left:0; top: 0; cursor:pointer;  }
+.sb-dropdown { width:100%; top:0px; left:0px; position:absolute; z-index:2; display:none; background:#FFF; padding-bottom:10px;  }
+.sb-dropdown a { width:94%; height:23px; line-height:23px; padding:0 3%; display: block; color:#646464; }
+.sb-dropdown a:hover { background:#fb9c28; color:#fff; }
+.sb-dropdown li.selected { width:100%; background:#fb9c28; }
+.sb-dropdown li.selected a { color:#fff;  }
